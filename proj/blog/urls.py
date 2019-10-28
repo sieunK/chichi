@@ -8,6 +8,6 @@ router.register('Blog', views.BlogViewSet)
 router.register('BlogPic', views.BlogPicViewSet)
 router.register('BlogFile', views.BlogFileViewSet)
 
-urlpatterns = {
-    path('',include(router.urls))
-}
+urlpatterns = [
+    path('',include(router.urls)),
+]
